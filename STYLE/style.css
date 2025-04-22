@@ -1,0 +1,664 @@
+:root {
+    --rosa-acento: #F4A6BE;
+    --claro-acento: #e9dce2;
+    --azul-acento: #4A5B99;
+    --azul-secundario: #6374C6;
+    --blanco: #ffffff;
+    --rosa-alt: #f1d7df;
+    --oscuro: #252525;
+}
+
+@font-face {
+
+    font-family: HoneyCalmDown;
+
+    src: url(../FONTS/HoneyCalmDown-Regular.ttf);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* LAYOUT */
+
+
+main {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    /* o 400 si usás numeración */
+}
+
+b {
+    color: var(--rosa-acento);
+}
+
+
+footer {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+
+/* header */
+
+nav {
+    height: auto;
+    width: 100%;
+    background-color: var(--azul-acento);
+
+}
+
+
+nav a {
+    text-decoration: none;
+    color: var(--azul-acento);
+    padding: 8px 12px;
+}
+
+header {
+    background-color: var(--rosa-acento);
+    text-align: center;
+    height: 50vh;
+}
+
+header a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: HoneyCalmDown;
+}
+
+header h1 {
+    color: var(--azul-acento);
+    font-family: HoneyCalmDown;
+    font-size: 160px;
+}
+
+header h2 {
+    color: var(--azul-acento);
+    font-family: HoneyCalmDown;
+    font-size: 110px;
+    position: relative;
+    top: 150px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding: 20px;
+    align-items: center;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+header img {
+    padding: 20px;
+    width: 160px;
+    margin-top: 20px;
+}
+
+/* main */
+
+#tips {
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    height: 300px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#tips span {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#tips i {
+    color: var(--rosa-acento);
+    font-size: 40px;
+}
+
+#tips img {
+    width: 130px;
+    height: 130px;
+    padding: 20px;
+}
+
+#tips h2 {
+    font-family: HoneyCalmDown;
+    color: var(--rosa-acento);
+    font-size: 35px;
+}
+
+
+#carta {
+    background-color: var(--azul-acento);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+}
+
+#carta h2 {
+    font-family: HoneyCalmDown;
+    color: var(--claro-acento);
+    font-size: 70px;
+}
+
+#carta p {
+    width: 500px;
+    text-align: left;
+}
+
+#carta img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#carta span {
+    margin-left: 10%;
+    text-align: left;
+}
+
+#carta a {
+    text-decoration: none;
+    color: var(--rosa-acento);
+    font-size: 20px;
+    font-family: 'HoneyCalmDown';
+}
+
+
+/* carta */
+
+#cartafr {
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    border-bottom: 10px solid var(--rosa-acento);
+}
+
+#cartafr p {
+    padding: 20px;
+    text-align: center;
+}
+
+#cartasc p {
+    padding: 20px;
+    text-align: center;
+}
+
+#cartafr h2 {
+    font-family: "Caveat Brush", cursive;
+    color: var(--azul-acento);
+    font-size: 40px;
+}
+
+#cartasect img {
+    width: 250px
+}
+
+#cartasc {
+    background-color: var(--azul-acento);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+#cartasc h2 {
+    font-family: "Caveat Brush", cursive;
+    color: var(--rosa-acento);
+    font-size: 40px;
+}
+
+.rosigall {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+/* historia */
+
+.rositm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+#pasado {
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    width: 40%;
+    padding: 50px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.rositm aside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    padding: 50px;
+}
+
+.fothist {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.fothist2 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+#pasado h3 {
+    font-family: "Caveat Brush", cursive;
+    color: var(--rosa-acento);
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+#presente {
+    background-color: var(--azul-acento);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    padding: 100px;
+    overflow: visible;
+    height: 500px;
+}
+
+#presente img {
+    position: absolute;
+    left: 10%;
+    height: 140%;
+    object-fit: cover;
+    z-index: 1;
+    bottom: 0px;
+}
+
+.presenteqt {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    right: 10%;
+}
+
+#presente h2 {
+    font-family: "Caveat Brush", cursive;
+    color: var(--blanco);
+    font-size: 220px;
+    margin: 0;
+}
+
+#presente p {
+    font-size: 16px;
+}
+
+/* historia */
+
+#fundadora {
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    text-align: center;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#fundadora img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+#fundadora h2 {
+    font-family: "Caveat Brush", cursive;
+    color: var(--rosa-acento);
+    font-size: 55px;
+}
+
+#fundadora p {
+    width: 40%;
+}
+
+#socios {
+    background-color: var(--azul-acento);
+    color: var(--blanco);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    padding: 100px;
+    align-items: center;
+}
+
+.socs {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#socios img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+#socios h3 {
+    font-family: "Caveat Brush", cursive;
+    color: var(--blanco);
+    font-size: 30px;
+}
+
+/* contacto */
+#mapas {
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    padding: 80px;
+    justify-content: space-around;
+}
+
+.tiendasf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
+    text-align: right;
+}
+
+.form-select {
+    width: 30%;
+}
+
+#mapas h2 {
+    font-family: "Caveat Brush", cursive;
+    color: var(--rosa-acento);
+    font-size: 100px;
+}
+
+#enviosdom {
+    background-color: var(--azul-acento);
+    color: var(--blanco);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#enviosdom p {
+    width: 40%;
+    text-align: center;
+}
+
+.formuenv {
+    width: 30%;
+    margin-top: 40px;
+}
+
+#enviosdom h2 {
+    font-family: "Caveat Brush", cursive;
+    color: var(--blanco);
+    font-size: 80px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.userrev {
+    width: 60px;
+}
+
+.userrating {
+    width: 70px;
+    color: var(--rosa-acento);
+}
+
+#review {
+    background-color: var(--claro-acento);
+    color: var(--oscuro);
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#review h3 {
+    font-size: 30px;
+    font-family: HoneyCalmDown;
+    color: var(--azul-acento);
+    margin-bottom: 10px;
+}
+
+#review p {
+    width: 500px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#review img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+#marca {
+    background-color: var(--rosa-acento);
+    color: var(--blanco);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#marca img {
+    width: 200px
+}
+
+#marca i {
+    font-size: 25px;
+    border-radius: 100%;
+    margin: 10px;
+    color: #ffffff;
+}
+
+#marca p {
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 599px) {
+    header h1 {
+        font-size: 60px;
+    }
+
+    header h2 {
+        font-size: 40px;
+        top: 60px;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    #tips {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    #tips img,
+    #tips i {
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+    }
+
+    #tips h2 {
+        font-size: 25px;
+    }
+
+    #carta {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #carta img {
+        width: 120%;
+        height: auto;
+    }
+
+    #carta span {
+        margin-left: 0;
+    }
+
+    #carta h2 {
+        font-size: 40px;
+    }
+
+    #carta p {
+        width: 90%;
+    }
+
+    #presente img {
+        width: 100%;
+    }
+
+    #presente h2 {
+        font-size: 60px;
+    }
+
+    .rosigall {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #review,
+    #marca {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #review p,
+    #marca p {
+        width: 90%;
+    }
+}

@@ -13,7 +13,9 @@
     src: url(../FONTS/HoneyCalmDown-Regular.ttf);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,14 +23,22 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
+    /* 14px */
 }
 
-main, footer {
-    font-size: 0.8125rem; /* 13px */
+main,
+footer {
+    font-size: 0.8125rem;
+    /* 13px */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
 }
 
@@ -58,16 +68,16 @@ nav a {
     padding: 0.5rem 0.75rem;
     color: var(--blanco);
     text-decoration: none;
-    font-size: 0.9375rem; /* 15px */
+    font-size: 0.9375rem;
+    /* 15px */
     font-family: HoneyCalmDown;
 }
 
 header {
     background-color: var(--rosa-acento);
     text-align: center;
-    min-height: 50vh;
-    display: flex
-;
+    min-height: 30vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -77,15 +87,14 @@ header {
 header h1 {
     color: var(--azul-acento);
     font-family: HoneyCalmDown;
-    font-size: 10rem; /* 160px */
+    font-size: 10rem;
 }
 
 header h2 {
     color: var(--azul-acento);
     font-family: HoneyCalmDown;
-    font-size: 6.875rem; /* 110px */
+    font-size: 7rem;
     position: relative;
-    top: 9.375rem; /* 150px */
 }
 
 header ul {
@@ -104,7 +113,13 @@ header img {
     margin-top: 1.25rem;
 }
 
-#tips, #carta, #cartafr, #cartasc, #socios, #mapas, #enviosdom {
+#tips,
+#carta,
+#cartafr,
+#cartasc,
+#socios,
+#mapas,
+#enviosdom {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -133,7 +148,8 @@ header img {
 #tips h2 {
     font-family: HoneyCalmDown;
     color: var(--rosa-acento);
-    font-size: 2.1875rem; /* 35px */
+    font-size: 2.1875rem;
+    /* 35px */
 }
 
 #carta {
@@ -150,7 +166,8 @@ header img {
 #carta h2 {
     font-family: HoneyCalmDown;
     color: var(--claro-acento);
-    font-size: 4.375rem; /* 70px */
+    font-size: 4.375rem;
+    /* 70px */
 }
 
 #carta p {
@@ -174,12 +191,19 @@ header img {
     font-family: 'HoneyCalmDown';
 }
 
-#cartafr, #cartasc {
+#cartafr,
+#cartasc {
     padding: 2.5rem;
     text-align: center;
 }
 
-#cartafr h2, #cartasc h2 {
+#cartasc {
+    background-color: var(--azul-acento);
+    color: var(--blanco);
+}
+
+#cartafr h2,
+#cartasc h2 {
     font-family: "Caveat Brush", cursive;
     font-size: 2.5rem;
 }
@@ -222,7 +246,8 @@ header img {
 #pasado h3 {
     font-family: "Caveat Brush", cursive;
     color: var(--rosa-acento);
-    font-size: 2.8125rem; /* 45px */
+    font-size: 2.8125rem;
+    /* 45px */
     margin-top: 1.25rem;
 }
 
@@ -278,7 +303,8 @@ header img {
 
 #presente h2 {
     font-family: "Caveat Brush", cursive;
-    font-size: 13.75rem; /* 220px */
+    font-size: 13.75rem;
+    /* 220px */
     margin: 0;
 }
 
@@ -398,7 +424,8 @@ footer {
     color: var(--rosa-acento);
 }
 
-#review, #marca {
+#review,
+#marca {
     width: 50%;
     padding: 1.875rem;
     display: flex;
@@ -414,7 +441,8 @@ footer {
     margin-bottom: 0.625rem;
 }
 
-#review p, #marca p {
+#review p,
+#marca p {
     max-width: 500px;
     margin-bottom: 1.25rem;
 }
@@ -456,7 +484,10 @@ footer {
 
 @media (max-width: 599px) {
 
-    header{height:30%;}
+    header {
+        height: 30%;
+    }
+
     header h1 {
         font-size: 60px;
     }
@@ -481,8 +512,7 @@ footer {
     #tips {
         height: auto;
         padding: 20px;
-        display: flex
-;
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     }
@@ -733,4 +763,3 @@ footer {
         font-size: 45px;
     }
 }
-

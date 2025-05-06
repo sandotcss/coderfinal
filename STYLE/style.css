@@ -344,6 +344,7 @@ header img {
 #socios {
     background-color: var(--azul-acento);
     color: var(--blanco);
+    text-align: center;
 }
 
 .socs {
@@ -392,6 +393,12 @@ header img {
 #enviosdom {
     background-color: var(--azul-acento);
     color: var(--blanco);
+    display: flex
+;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 50px;
 }
 
 #enviosdom p {
@@ -424,8 +431,7 @@ footer {
     color: var(--rosa-acento);
 }
 
-#review,
-#marca {
+#review, #marca {
     width: 50%;
     padding: 1.875rem;
     display: flex;
@@ -458,6 +464,12 @@ footer {
 #marca {
     background-color: var(--rosa-acento);
     color: var(--blanco);
+    display: flex
+;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #marca img {
@@ -478,6 +490,32 @@ footer {
     align-items: center;
 }
 
+.navbar {display:flex;}
+.navbar-custom {
+    background-color: var(--azul-acento); 
+  }
+  
+  .navbar-custom .nav-link {
+    color: var(--blanco)
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: var(--rosa-acento)
+  }
+  
+
+  .navbar-mobile {
+    background-color: var(--azul-acento)
+  }
+  
+  .navbar-mobile .nav-link {
+    color: var(--blanco);
+  }
+  
+  .navbar-mobile .nav-link:hover {
+    color: var(--rosa-acento);
+  }
+  
 
 /* MEDIA QUERIES */
 
@@ -601,8 +639,8 @@ footer {
     }
 
     header h2 {
-        font-size: 60px;
-        top: 80px;
+        font-size: 70px;
+        top: 0;
     }
 
     #carta,
@@ -685,8 +723,16 @@ footer {
     }
 
     #mapas {
-        flex-direction: column;
-        padding: 40px 20px;
+        background-color: var(--blanco);
+    color: var(--oscuro);
+    display: flex
+;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
     }
 
     .tiendasf,

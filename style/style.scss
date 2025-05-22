@@ -1,0 +1,711 @@
+
+$rosa-acento: #F4A6BE;
+$claro-acento: #e9dce2;
+$azul-acento: #4A5B99;
+$azul-secundario: #6374C6;
+$blanco: #ffffff;
+$rosa-alt: #f1d7df;
+$oscuro: #252525;
+
+
+@font-face {
+  font-family: HoneyCalmDown;
+  src: url(../fonts/HoneyCalmDown-Regular.ttf);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem; // 14px
+}
+
+main,
+footer {
+  font-size: 0.8125rem; // 13px
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+b {
+  color: $rosa-acento;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav {
+  width: 100%;
+  background-color: $azul-acento;
+  text-align: center;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+
+  a {
+    padding: 0.5rem 0.75rem;
+    color: $blanco;
+    text-decoration: none;
+    font-size: 0.9375rem; // 15px
+    font-family: HoneyCalmDown;
+  }
+}
+
+header {
+  background-color: $rosa-acento;
+  text-align: center;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  h1 {
+    color: $azul-acento;
+    font-family: HoneyCalmDown;
+    font-size: 10rem;
+  }
+
+  h2 {
+    color: $azul-acento;
+    font-family: HoneyCalmDown;
+    font-size: 7rem;
+    position: relative;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 1.25rem;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  img {
+    width: 10rem;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+  }
+}
+
+#tips,
+#carta,
+#cartafr,
+#cartasc,
+#socios,
+#mapas,
+#enviosdom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+#tips {
+  background-color: $blanco;
+  color: $oscuro;
+  gap: 1.5rem;
+
+  span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  i {
+    color: $rosa-acento;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-family: HoneyCalmDown;
+    color: $rosa-acento;
+    font-size: 2.1875rem; // 35px
+  }
+}
+
+#carta {
+  background-color: $azul-acento;
+  color: $blanco;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-direction: row;
+  align-content: center;
+
+  h2 {
+    font-family: HoneyCalmDown;
+    color: $claro-acento;
+    font-size: 4.375rem; // 70px
+  }
+
+  p {
+    max-width: 500px;
+    text-align: left;
+  }
+
+  img {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  span {
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    color: $rosa-acento;
+    font-size: 1.25rem;
+    font-family: HoneyCalmDown;
+  }
+}
+
+#cartafr,
+#cartasc {
+  padding: 2.5rem;
+  text-align: center;
+
+  h2 {
+    font-family: "Caveat Brush", cursive;
+    font-size: 2.5rem;
+  }
+}
+
+#cartafr {
+  h2 {
+    color: $azul-acento;
+  }
+}
+
+#cartasc {
+  background-color: $azul-acento;
+  color: $blanco;
+
+  h2 {
+    color: $rosa-acento;
+  }
+}
+
+#cartasect img {
+  width: 250px;
+}
+
+.rosigall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  text-align: center;
+}
+
+.rositm {
+  display: flex;
+  justify-content: space-around;
+  padding: 3.125rem;
+  flex-wrap: wrap;
+
+  aside {
+    width: 60%;
+    padding: 3.125rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+#pasado {
+  background-color: $blanco;
+  color: $oscuro;
+  width: 40%;
+  padding: 3.125rem;
+  text-align: justify;
+
+  h3 {
+    font-family: "Caveat Brush", cursive;
+    color: $rosa-acento;
+    font-size: 2.8125rem; // 45px
+    margin-top: 1.25rem;
+  }
+}
+
+.fothist {
+  width: 45%;
+  height: 300px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.fothist2 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin: 20px;
+}
+
+#presente {
+  background-color: $azul-acento;
+  color: $blanco;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  padding: 6.25rem;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    left: 10%;
+    height: 140%;
+    object-fit: cover;
+    z-index: 1;
+    bottom: 0;
+  }
+
+  .presenteqt {
+    position: relative;
+    z-index: 2;
+    padding: 2.5rem;
+    max-width: 800px;
+    right: 10%;
+  }
+
+  h2 {
+    font-family: "Caveat Brush", cursive;
+    font-size: 13.75rem; // 220px
+    margin: 0;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+#fundadora {
+  background-color: $blanco;
+  color: $oscuro;
+  text-align: center;
+  padding: 4.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  h2 {
+    font-family: "Caveat Brush", cursive;
+    color: $rosa-acento;
+    font-size: 3.4375rem;
+  }
+
+  p {
+    max-width: 600px;
+  }
+}
+
+#socios {
+  background-color: $azul-acento;
+  color: $blanco;
+  text-align: center;
+
+  .socs {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  h3 {
+    font-family: "Caveat Brush", cursive;
+    font-size: 1.875rem;
+  }
+}
+
+#mapas {
+  background-color: $blanco;
+  color: $oscuro;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+
+  .tiendasf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+    text-align: right;
+  }
+
+  .form-select {
+    width: 30%;
+  }
+
+  h2 {
+    font-family: "Caveat Brush", cursive;
+    color: $rosa-acento;
+    font-size: 6.25rem;
+  }
+}
+
+#enviosdom {
+  background-color: $azul-acento;
+  color: $blanco;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 50px;
+
+  p {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .formuenv {
+    width: 30%;
+    margin-top: 2.5rem;
+  }
+
+  h2 {
+    font-family: "Caveat Brush", cursive;
+    font-size: 5rem;
+  }
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.userrev {
+  width: 60px;
+}
+
+.userrating {
+  width: 70px;
+  color: $rosa-acento;
+}
+
+#review,
+#marca {
+  width: 50%;
+  padding: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#review {
+  h3 {
+    font-size: 1.875rem;
+    font-family: HoneyCalmDown;
+    color: $azul-acento;
+    margin-bottom: 0.625rem;
+  }
+
+  p {
+    max-width: 500px;
+    margin-bottom: 1.25rem;
+  }
+
+  img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.625rem;
+  }
+}
+
+#marca {
+  background-color: $rosa-acento;
+  color: $blanco;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  p {
+    max-width: 500px;
+    margin-bottom: 1.25rem;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  i {
+    font-size: 1.5625rem;
+    border-radius: 50%;
+    margin: 0.625rem;
+    color: $blanco;
+  }
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar-custom {
+  background-color: $azul-acento;
+
+  .nav-link {
+    color: $blanco;
+
+    &:hover {
+      color: $rosa-acento;
+    }
+  }
+}
+
+.navbar-mobile {
+  background-color: $azul-acento;
+
+  .nav-link {
+    color: $blanco;
+
+    &:hover {
+      color: $rosa-acento;
+    }
+  }
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 599px) {
+  header {
+    height: 30%;
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h2 {
+      font-size: 40px;
+      top: 60px;
+    }
+
+    img {
+      width: 60%;
+    }
+
+    ul {
+      flex-direction: column;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+  }
+
+  #tips {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    img,
+    i {
+      width: 80px;
+      height: 80px;
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  #carta {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    span {
+      margin-left: 0;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+
+  #cartafr,
+  #cartasc {
+    padding: 0;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .rosigall {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .rositm {
+    padding: 2.5rem 0;
+  }
+
+  #pasado {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #presente {
+    padding: 20px;
+    flex-direction: column;
+
+    img {
+      position: relative;
+      left: 0;
+      height: auto;
+      width: 100%;
+      margin-bottom: 20px;
+      z-index: 0;
+    }
+
+    .presenteqt {
+      right: 0;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 100px;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  #fundadora {
+    padding: 20px;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  #socios {
+    .socs {
+      width: 50%;
+      padding: 1rem;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  #mapas {
+    flex-direction: column;
+    padding: 20px;
+
+    .tiendasf {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .form-select {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  #enviosdom {
+    padding: 20px;
+
+    .formuenv {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #review,
+  #marca {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #review {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+

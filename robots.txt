@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://pfcoderhouse-mu.vercel.app/

@@ -2,8 +2,6 @@
   font-family: HoneyCalmDown;
   src: url(../fonts/HoneyCalmDown-Regular.ttf);
 }
-
-
 *,
 *::before,
 *::after {
@@ -14,7 +12,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
 }
 
 main,
@@ -46,13 +44,12 @@ nav {
   background-color: #4A5B99;
   text-align: center;
   display: flex;
-  height: 4rem;
+  height: 3rem;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
 }
-
 nav a {
   padding: 0.5rem 0.75rem;
   color: #ffffff;
@@ -71,20 +68,18 @@ header {
   align-items: center;
   flex-wrap: nowrap;
 }
-
 header h1 {
   color: #4A5B99;
   font-family: HoneyCalmDown;
-  font-size: 10rem;
+  font-size: 8rem;
 }
-
 header h2 {
   color: #4A5B99;
   font-family: HoneyCalmDown;
-  font-size: 7rem;
+  font-size: 5rem;
   position: relative;
+  padding: 20px;
 }
-
 header ul {
   display: flex;
   justify-content: center;
@@ -94,24 +89,15 @@ header ul {
   align-items: center;
   gap: 1.25rem;
 }
-
 header img {
-  width: 10rem;
+  width: 15rem;
   padding: 1.25rem;
   margin-top: 1.25rem;
 }
-
-header img:hover {
-  animation: rosiAnim 2s infinite ease-in-out;
-}
-
-@keyframes rosiAnim {
-  25% {
-    transform: rotate(15deg);
-  }
-  75% {
-    transform: rotate(-15deg);
-  }
+header i {
+  font-size: 5rem;
+  color: #ffffff;
+  margin-top: 20px;
 }
 
 #tips,
@@ -133,19 +119,16 @@ header img:hover {
   color: #252525;
   gap: 1.5rem;
 }
-
 #tips span {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
 #tips i {
   color: #F4A6BE;
   font-size: 2.5rem;
 }
-
 #tips h2 {
   font-family: HoneyCalmDown;
   color: #F4A6BE;
@@ -160,27 +143,22 @@ header img:hover {
   flex-direction: row;
   align-content: center;
 }
-
 #carta h2 {
   font-family: HoneyCalmDown;
   color: #e9dce2;
   font-size: 4.375rem;
 }
-
 #carta p {
   max-width: 500px;
   text-align: left;
 }
-
 #carta img {
   width: 50%;
   object-fit: cover;
 }
-
 #carta span {
   text-align: left;
 }
-
 #carta a {
   text-decoration: none;
   color: #F4A6BE;
@@ -193,7 +171,6 @@ header img:hover {
   padding: 2.5rem;
   text-align: center;
 }
-
 #cartafr h2,
 #cartasc h2 {
   font-family: "Caveat Brush", cursive;
@@ -208,9 +185,19 @@ header img:hover {
   background-color: #4A5B99;
   color: #ffffff;
 }
-
 #cartasc h2 {
   color: #F4A6BE;
+}
+
+.carousel {
+  position: relative;
+  width: 50%;
+}
+
+.carousel-img {
+  width: 420px;
+  object-fit: cover;
+  height: 380px;
 }
 
 #cartasect img {
@@ -231,7 +218,6 @@ header img:hover {
   padding: 3.125rem;
   flex-wrap: wrap;
 }
-
 .rositm aside {
   width: 60%;
   padding: 3.125rem;
@@ -247,7 +233,6 @@ header img:hover {
   padding: 3.125rem;
   text-align: justify;
 }
-
 #pasado h3 {
   font-family: "Caveat Brush", cursive;
   color: #F4A6BE;
@@ -279,31 +264,27 @@ header img:hover {
   padding: 6.25rem;
   overflow: visible;
 }
-
 #presente img {
   position: absolute;
-  left: -5%;
+  left: -4%;
   height: 140%;
   object-fit: cover;
   z-index: 1;
   bottom: 0;
 }
-
 #presente .presenteqt {
   position: relative;
   z-index: 2;
   padding: 2.5rem;
   max-width: 800px;
-  right: 0;
+  right: 10%;
   text-align: right;
 }
-
 #presente h2 {
   font-family: "Caveat Brush", cursive;
   font-size: 13.75rem;
   margin: 0;
 }
-
 #presente p {
   font-size: 1rem;
 }
@@ -318,20 +299,17 @@ header img:hover {
   align-items: center;
   gap: 0.625rem;
 }
-
 #fundadora img {
   width: 300px;
   height: 300px;
   object-fit: cover;
   border-radius: 50%;
 }
-
 #fundadora h2 {
   font-family: "Caveat Brush", cursive;
   color: #F4A6BE;
   font-size: 3.4375rem;
 }
-
 #fundadora p {
   max-width: 600px;
 }
@@ -341,7 +319,6 @@ header img:hover {
   color: #ffffff;
   text-align: center;
 }
-
 #socios .socs {
   width: 20%;
   display: flex;
@@ -349,15 +326,12 @@ header img:hover {
   align-items: center;
   gap: 15px;
 }
-
 #socios img {
   width: 200px;
   height: 200px;
-  min-width:200px;
   object-fit: cover;
   border-radius: 50%;
 }
-
 #socios h3 {
   font-family: "Caveat Brush", cursive;
   font-size: 1.875rem;
@@ -374,7 +348,6 @@ header img:hover {
   align-items: center;
   padding: 50px;
 }
-
 #mapas .tiendasf {
   display: flex;
   flex-direction: column;
@@ -382,11 +355,9 @@ header img:hover {
   width: 40%;
   text-align: right;
 }
-
 #mapas .form-select {
   width: 30%;
 }
-
 #mapas h2 {
   font-family: "Caveat Brush", cursive;
   color: #F4A6BE;
@@ -402,17 +373,14 @@ header img:hover {
   align-items: center;
   padding: 50px;
 }
-
 #enviosdom p {
   max-width: 600px;
   text-align: center;
 }
-
 #enviosdom .formuenv {
   width: 30%;
   margin-top: 2.5rem;
 }
-
 #enviosdom h2 {
   font-family: "Caveat Brush", cursive;
   font-size: 5rem;
@@ -449,12 +417,10 @@ footer {
   color: #4A5B99;
   margin-bottom: 0.625rem;
 }
-
 #review p {
   max-width: 500px;
   margin-bottom: 1.25rem;
 }
-
 #review img {
   width: 110px;
   height: 110px;
@@ -469,16 +435,13 @@ footer {
   flex-wrap: nowrap;
   justify-content: center;
 }
-
 #marca p {
   max-width: 500px;
   margin-bottom: 1.25rem;
 }
-
 #marca img {
   width: 200px;
 }
-
 #marca i {
   font-size: 1.5625rem;
   border-radius: 50%;
@@ -500,11 +463,9 @@ footer {
 .navbar-custom {
   background-color: #4A5B99;
 }
-
 .navbar-custom .nav-link {
   color: #ffffff;
 }
-
 .navbar-custom .nav-link:hover {
   color: #F4A6BE;
 }
@@ -512,11 +473,9 @@ footer {
 .navbar-mobile {
   background-color: #4A5B99;
 }
-
 .navbar-mobile .nav-link {
   color: #ffffff;
 }
-
 .navbar-mobile .nav-link:hover {
   color: #F4A6BE;
 }
@@ -525,189 +484,159 @@ footer {
   header {
     height: 30%;
   }
-
   header h1 {
     font-size: 60px;
   }
-
   header h2 {
-    font-size: 40px;
-    top: 60px;
+    font-size: 5rem;
   }
-
   header img {
     width: 60%;
   }
-
   header ul {
     flex-direction: column;
   }
-
   header li {
     margin: 10px 0;
   }
-
+  .maprosi {
+    width: 100%;
+  }
+  p {
+    font-size: 1rem;
+    padding: 10px;
+  }
   #tips {
     height: auto;
     padding: 20px;
     flex-direction: column;
     flex-wrap: nowrap;
   }
-
   #tips img,
   #tips i {
     width: 80px;
     height: 80px;
     font-size: 30px;
   }
-
   #tips h2 {
     font-size: 25px;
   }
-
   #carta {
     flex-direction: column;
     height: auto;
     text-align: center;
     padding: 20px;
   }
-
-  #carta img {
-    width: 100%;
-    height: auto;
-  }
-
   #carta span {
     margin-left: 0;
   }
-
   #carta h2 {
     font-size: 40px;
   }
-
   #carta p {
     width: 100%;
   }
-
+  .carousel {
+    position: relative;
+    width: 50%;
+  }
+  .carousel-img {
+    width: 100%;
+    max-width: 420px;
+  }
   #cartafr,
   #cartasc {
     padding: 0;
   }
-
   #cartafr h2,
   #cartasc h2 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
-
   .rosigall {
     width: 100%;
     font-size: 1.5rem;
   }
-
   .rositm {
     padding: 2.5rem 0;
   }
-
   #pasado {
     width: 100%;
     padding: 20px;
   }
-
   #presente {
     padding: 20px;
     flex-direction: column;
   }
-
   #presente img {
-    position: relative;
+    position: absolute;
     left: 0;
-    height: auto;
+    height: 150%;
     width: 100%;
-    margin-bottom: 20px;
     z-index: 0;
   }
-
   #presente .presenteqt {
     right: 0;
     max-width: 100%;
     padding: 0;
   }
-
   #presente h2 {
     font-size: 100px;
   }
-
   #presente p {
     font-size: 1rem;
   }
-
   #fundadora {
     padding: 20px;
   }
-
   #fundadora img {
     width: 200px;
     height: 200px;
   }
-
   #fundadora h2 {
     font-size: 2.5rem;
   }
-
   #socios .socs {
     width: 50%;
     padding: 1rem;
   }
-
   #socios img {
     width: 150px;
     height: 150px;
-    min-width: 150px;
   }
-
   #mapas {
     flex-direction: column;
     padding: 20px;
   }
-
   #mapas .tiendasf {
     width: 100%;
     text-align: center;
     align-items: center;
     margin-bottom: 20px;
   }
-
   #mapas .form-select {
     width: 100%;
   }
-
   #mapas h2 {
     font-size: 3rem;
   }
-
   #enviosdom {
     padding: 20px;
   }
-
   #enviosdom .formuenv {
     width: 100%;
   }
-
   #enviosdom h2 {
     font-size: 3rem;
   }
-
   footer {
     flex-direction: column;
     text-align: center;
   }
-
   #review,
   #marca {
     width: 100%;
     padding: 10px;
   }
-
   #review h3 {
     font-size: 1.5rem;
   }

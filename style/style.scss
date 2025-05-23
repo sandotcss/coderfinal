@@ -1,4 +1,3 @@
-
 $rosa-acento: #F4A6BE;
 $claro-acento: #e9dce2;
 $azul-acento: #4A5B99;
@@ -23,7 +22,7 @@ $oscuro: #252525;
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 0.875rem; // 14px
+  font-size: 0.9rem;
 }
 
 main,
@@ -31,7 +30,12 @@ footer {
   font-size: 0.8125rem; // 13px
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
 }
 
@@ -78,14 +82,15 @@ header {
   h1 {
     color: $azul-acento;
     font-family: HoneyCalmDown;
-    font-size: 10rem;
+    font-size: 8rem;
   }
 
   h2 {
     color: $azul-acento;
     font-family: HoneyCalmDown;
-    font-size: 7rem;
+    font-size: 5rem;
     position: relative;
+    padding: 20px
   }
 
   ul {
@@ -99,9 +104,15 @@ header {
   }
 
   img {
-    width: 10rem;
+    width: 15rem;
     padding: 1.25rem;
     margin-top: 1.25rem;
+  }
+
+  i {
+    font-size: 5rem;
+    color: $blanco;
+    margin-top: 20px;
   }
 }
 
@@ -205,6 +216,17 @@ header {
   }
 }
 
+.carousel {
+  position: relative;
+  width: 50%;
+}
+
+.carousel-img {
+  width: 420px;
+  object-fit: cover;
+  height: 380px;
+}
+
 #cartasect img {
   width: 250px;
 }
@@ -269,11 +291,11 @@ header {
   justify-content: flex-end;
   position: relative;
   padding: 6.25rem;
-  overflow: hidden;
+  overflow: visible;
 
   img {
     position: absolute;
-    left: 10%;
+    left: -4%;
     height: 140%;
     object-fit: cover;
     z-index: 1;
@@ -286,6 +308,7 @@ header {
     padding: 2.5rem;
     max-width: 800px;
     right: 10%;
+    text-align: right;
   }
 
   h2 {
@@ -524,8 +547,7 @@ footer {
     }
 
     h2 {
-      font-size: 40px;
-      top: 60px;
+      font-size: 5rem;
     }
 
     img {
@@ -539,6 +561,16 @@ footer {
     li {
       margin: 10px 0;
     }
+
+  }
+
+  .maprosi {
+    width: 100%
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 10px;
   }
 
   #tips {
@@ -565,11 +597,6 @@ footer {
     text-align: center;
     padding: 20px;
 
-    img {
-      width: 100%;
-      height: auto;
-    }
-
     span {
       margin-left: 0;
     }
@@ -583,12 +610,22 @@ footer {
     }
   }
 
+  .carousel {
+    position: relative;
+    width: 50%;
+  }
+
+  .carousel-img {
+    width: 100%;
+    max-width: 420px;
+  }
+
   #cartafr,
   #cartasc {
     padding: 0;
 
     h2 {
-      font-size: 2rem;
+      font-size: 4rem;
     }
   }
 
@@ -611,11 +648,10 @@ footer {
     flex-direction: column;
 
     img {
-      position: relative;
+      position: absolute;
       left: 0;
-      height: auto;
+      height: 150%;
       width: 100%;
-      margin-bottom: 20px;
       z-index: 0;
     }
 
@@ -708,4 +744,3 @@ footer {
     }
   }
 }
-
